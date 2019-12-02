@@ -1,0 +1,7 @@
+# windows thumbnail cache
+Thumbs.db
+
+
+#gulp files
+node_modules
+package-lock.json

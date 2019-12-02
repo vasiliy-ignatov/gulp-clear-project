@@ -1,0 +1,30 @@
+include ./_mixins
+
+doctype html
+html(lang="ru" class="")
+	head
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+		link(href="../f/css/vendor.css" type="text/css" rel="stylesheet")
+		link(href="../f/css/main.css" type="text/css" rel="stylesheet")
+		// script(src="https://api-maps.yandex.ru/2.1/?apikey=7d5cde14-6735-4a98-b1e5-ee4aae7097ca&lang=ru_RU")
+		// Google Analytics
+		script.
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-80989932-1', 'auto');
+		script(async='', src='https://www.google-analytics.com/analytics.js')
+			// End Google Analytics
+
+
+	body
+		include ./preloader
+		// include ./header
+		include ./main-menu
+		main.main.js-section-slick
+			block page
+		include ./footer
+
+		script(src="../f/js/jquery.min.js" type="text/javascript")
+		script(src="../f/js/vendor.js" type="text/javascript")
+		script(src="../f/js/main.js" type="text/javascript")

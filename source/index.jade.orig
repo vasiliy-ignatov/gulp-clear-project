@@ -1,0 +1,7 @@
+extends ./tpl/layout
+
+block page
+	include ./tpl/section-01_new
+	include ./tpl/section-02
+	include ./tpl/section-03
+	include ./tpl/section-05
