@@ -1,0 +1,20 @@
+.text {
+	font-size: 32px;
+	line-height: 48px;
+	color: $black;
+
+	@media ($desktop) {
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+.text_white {
+	color: $white;
+}
+.text_large {
+	font-size: 40px;
+	line-height: 56px;
+}
+.text_bold {
+	font-weight: 800;
+}

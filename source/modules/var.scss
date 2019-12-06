@@ -1,65 +1,20 @@
-// fonts
-$basefsize: 16px;
-$basefsize14: 14px;
-$basefsize18: 18px;
-$basefsize20: 20px;
-$baselineheight: 22px;
-$baselineheight24: 24px;
-$baselineheight14: 14px;
-
 // colors
-$body: #F9F8F9;
-$back_pup: #3C2F44;
-
-$black: #333;
+$body: #F2F1EF;
 $white: #fff;
-$white_opacity: rgba(255,255,255,0.75);
+$yellow: #FBAE38;
+$black: #000000;
+$black2: #333333;
+$red: #E74A21;
+$gray: #9D9D9D;
 
-$blue: #004DCD;
-$blue2: #008bfb;
+//gradients
+$g-yellow: linear-gradient(70.22deg, #EEB78B 18.62%, #D79D6F 66.52%);
+$g-gray: linear-gradient(134.86deg, #C5B6AA 45.49%, #E4DCD5 85.27%);
 
-$dark-purple: #3d3045;
-$dark-purple2: #574860;
-$dark-purple3: #27202B;
-$dark-purple4: #0A080C;
-
-$purple: #007235;
-$purple2: #00B956;
-$purple3: #2ABE6F;
-$purple4: #d4bde1;
-
-$green: #007F4F;
-$green2: #00985F;
-$green3: #00BF78;
-$green4: #0DBD6E;
-
-$red: #D80027;
-$red2: #E62C4D;
-$red3: #E96980;
-$red4: #CF5E73;
-$red5: #9E3548;
-$red6: #CB0000;
-
-$gray: #B2B2B2;
-$gray2: #D9D9D9;
-$gray3: #E5E5E5;
-$gray4: #F2F2F2;
-$gray5: #FAFAFA;
-$gray6: #999999;
-$gray7: #FAF9FA;
-$gray8: #979797;
-$gray_opacity: rgba(51,51,51,0.1);
-
-$pink: #E46C7F;
-$pink2: #CF5E73;
 
 // MEDIA
-$mw720: 'min-width: 720px';
-$mw1270: 'min-width: 1270px';
-$mw1460: 'min-width: 1460px';
-$mx960: 'max-width: 959px';
-$mx680: 'max-width: 679px';
-$phone: 'max-width: 719px';
-$tablet: 'max-width: 1023px';
-$wtablet: 'max-width: 1271px';
-$descktop: 'max-width: 1463px';
+$desktopxs: 'max-width: 1920px';
+$desktop: 'max-width: 1400px';
+$tablet: 'max-width: 1024px';
+$phone: 'max-width: 768px';
+$smallphone: 'max-width: 480px';
