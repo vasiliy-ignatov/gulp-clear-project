@@ -1,7 +1,12 @@
-# windows thumbnail cache
-Thumbs.db
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
 
-
-#gulp files
-node_modules
-package-lock.json
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

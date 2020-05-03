@@ -1,0 +1,12 @@
+@import "var";
+@import "bootstrap";
+
+html, body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.block	{
+	background-color: #eee;
+	border: 1px solid $gray;
+}
