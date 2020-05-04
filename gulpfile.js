@@ -2,7 +2,7 @@
 
 const { src, dest, watch, parallel, series } = require('gulp')
 const del = require('del')
-const browsersync = require('browser-sync')
+const browsersync = require('browser-sync').create()
 const sass = require('gulp-sass')
 const jade = require('gulp-jade')
 const concat = require('gulp-concat')
@@ -23,16 +23,18 @@ function clean () {
 }
 
 function browserSync () {
-	browsersync({
+	browsersync.init({
 		server: {
 			baseDir: './htdocs/',
 			open: true
 		}
 	})
+
+	watch(PATHS.OUT  + '/css/*.css').on('change', browsersync.reload)
 }
 
 function css() {
-	return src(PATHS.MODULES + '**/*.scss')
+	return src(PATHS.MODULES + '/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('main.css'))
 		.pipe(dest(PATHS.OUT + '/css'))
@@ -68,7 +70,7 @@ function fonts() {
 }
 
 function img() {
-	return src(PATHS.IN + 'img/*.*')
+	return src(PATHS.IN + '/img/*.*')
 		.pipe(dest(PATHS.OUT + '/img/'));
 }
 
@@ -86,9 +88,9 @@ function vedorCss() {
 
 
 function watchFiles() {
-	watch(PATHS.IN  + '**/*.jade', html)
-	watch(PATHS.MODULES  + '**/*.scss', css)
-	watch(PATHS.MODULES  + '**/*.js', js)
+	watch(PATHS.IN  + '/**/*.jade', html)
+	watch(PATHS.MODULES  + '/**/*.scss', css)
+	watch(PATHS.MODULES  + '/**/*.js', js)
 }
 
 const vendor = series(vendorJs, vedorCss)
