@@ -1,24 +1,29 @@
 {
-  "name": "gulp-new",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "vignatov",
-  "license": "ISC",
-  "devDependencies": {
-    "bootstrap": "^4.4.1",
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.1.0",
-    "jquery": "^3.5.0",
-    "node-sass": "^4.14.0"
-  },
-  "dependencies": {}
+	"name": "styletour",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"gulp": "gulp default",
+		"build": "gilp build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "vasiliy-ignatov",
+	"license": "ISC",
+	"devDependencies": {
+		"bootstrap": "^4.4.1",
+		"bootstrap-icons": "^1.0.0-alpha3",
+		"browser-sync": "^2.26.7",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-jade": "^1.1.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-sass": "^4.1.0",
+		"jquery": "^3.4.1",
+		"node-sass": "^4.14.0"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.4.0"
+	}
 }
