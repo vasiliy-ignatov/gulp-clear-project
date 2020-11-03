@@ -65,7 +65,7 @@ function bootstrapjs() {
 }
 
 function fonts() {
-	return src(PATHS.IN + 'fonts/*.*')
+	return src(PATHS.IN + '/fonts/*.*')
 		.pipe(dest(PATHS.OUT + '/fonts/'));
 }
 
